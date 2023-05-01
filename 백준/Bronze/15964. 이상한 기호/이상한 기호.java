@@ -12,8 +12,10 @@ public class Main{
 		StringTokenizer st=new StringTokenizer(br.readLine()," ");
 		int a=Integer.parseInt(st.nextToken());
 		int b=Integer.parseInt(st.nextToken());
-		int result=(a+b)*(a-b);
-		bw.write(result+"\n");
+		if(a<=1000 && b<=1000) {
+			int result=(a+b)*(a-b);
+			bw.write(result+"\n");
+		}
 		bw.flush();
 		bw.close();
 		br.close();
