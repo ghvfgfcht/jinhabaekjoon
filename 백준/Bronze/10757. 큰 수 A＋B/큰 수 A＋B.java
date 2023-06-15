@@ -12,8 +12,8 @@ public class Main{
 		BufferedWriter bw=new BufferedWriter(new OutputStreamWriter(System.out));
 		StringTokenizer st=new StringTokenizer(br.readLine()," ");
 		BigInteger a=new BigInteger(st.nextToken());
-		BigInteger b=new BigInteger(st.nextToken());
-		bw.write(a.add(b)+"\n");
+		a=a.add(new BigInteger(st.nextToken()));
+		bw.write(a+"\n");
 		bw.flush();
 		bw.close();
 		br.close();
