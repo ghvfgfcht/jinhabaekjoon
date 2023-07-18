@@ -9,7 +9,7 @@ public class Main{
 	static int n;
 	static int k;
 	static int ice[];
-	static int max=Integer.MIN_VALUE;
+	static int max=0;
 	static int gi;
 	static int xi;
 	static int max_sum=0;
@@ -22,7 +22,7 @@ public class Main{
       StringTokenizer st=new StringTokenizer(br.readLine()," ");
       n=Integer.parseInt(st.nextToken());
       k=Integer.parseInt(st.nextToken());
-      ice=new int[1000001]; //n의 최대가 100,000이므로
+      ice=new int[1000001]; //n의 최대가 1,000,000이므로
       for(int i=0;i<n;i++) {
     	  st=new StringTokenizer(br.readLine()," ");
     	  gi=Integer.parseInt(st.nextToken());
